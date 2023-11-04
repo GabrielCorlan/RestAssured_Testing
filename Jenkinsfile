@@ -15,7 +15,7 @@ pipeline {
             steps {
                 // This stage builds your project using Maven
                 // Example: sh 'mvn clean install'
-                sh 'mvn clean install'
+                bat 'mvn clean install'
             }
         }
 
@@ -23,7 +23,7 @@ pipeline {
             steps {
                 // This stage executes your Selenium tests using TestNG
                 // Example: sh 'mvn test'
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
 
@@ -34,7 +34,7 @@ pipeline {
             steps {
                 // This stage deploys your application (if applicable)
                 // Example: sh 'deploy_script.sh'
-                sh 'deploy_script.sh'
+                bat 'deploy_script.sh'
             }
         }
     }
