@@ -7,6 +7,7 @@ pipeline {
                 // This stage checks out the source code from your version control system
                 // For example, if you're using Git, you can use the 'git' step here
                 // Example: git 'https://github.com/yourusername/yourrepository.git'
+                git 'https://github.com/GabrielCorlan/RestAssured_Testing'
             }
         }
 
@@ -14,6 +15,7 @@ pipeline {
             steps {
                 // This stage builds your project using Maven
                 // Example: sh 'mvn clean install'
+                sh 'mvn clean install'
             }
         }
 
@@ -21,6 +23,7 @@ pipeline {
             steps {
                 // This stage executes your Selenium tests using TestNG
                 // Example: sh 'mvn test'
+                sh 'mvn test'
             }
         }
 
@@ -31,6 +34,7 @@ pipeline {
             steps {
                 // This stage deploys your application (if applicable)
                 // Example: sh 'deploy_script.sh'
+                sh 'deploy_script.sh'
             }
         }
     }
