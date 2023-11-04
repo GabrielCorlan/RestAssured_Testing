@@ -1,4 +1,8 @@
 pipeline {
+
+environment {
+        JAVA_HOME = "C:\\Program Files\\Java\\jdk-17.0.1" // e.g., "C:\\Program Files\\Java\\jdk1.8.0_301"
+    }
     agent any
 
     stages {
