@@ -7,7 +7,7 @@ pipeline {
                 // This stage checks out the source code from your version control system
                 // For example, if you're using Git, you can use the 'git' step here
                 // Example: git 'https://github.com/yourusername/yourrepository.git'
-                git 'https://github.com/GabrielCorlan/RestAssured_Testing'
+                git 'https://github.com/GabrielCorlan/RestAssured_Testing.git'
             }
         }
 
